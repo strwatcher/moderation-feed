@@ -1,0 +1,62 @@
+@use "/src/shared/styles/constants" as constants;
+@use "/src/shared/styles/lib" as lib;
+
+$color-modal-overlay: rgb(32 32 32 / 0.75);
+
+.overlay {
+  position: fixed;
+  z-index: constants.$z-index-modal;
+  inset: 0;
+  padding: 48px;
+  display: grid;
+  place-items: center;
+  background-color: $color-modal-overlay;
+  overflow-y: auto;
+}
+
+.content {
+  @include lib.stack(24px);
+
+  z-index: constants.$z-index-modal + 1;
+  position: relative;
+  border-radius: 4px;
+  padding: 32px;
+  background-color: constants.$color-white;
+  box-shadow: constants.$base-shadow;
+}
+
+.close {
+  @include lib.set-size(48px);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px;
+  color: constants.$color-black-2;
+
+  svg {
+    @include lib.set-size(24px);
+  }
+}
+
+@keyframes overlay-show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes content-show {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

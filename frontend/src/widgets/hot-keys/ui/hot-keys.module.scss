@@ -1,0 +1,5 @@
+@use "/src/shared/styles/lib" as lib;
+
+.root {
+  @include lib.stack(8px);
+}

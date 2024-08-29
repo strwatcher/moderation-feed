@@ -1,0 +1,23 @@
+@use "sass:math" as math;
+@use "/src/shared/styles/lib" as lib;
+@use "/src/shared/styles/constants" as constants;
+
+.root {
+  $size: 6px;
+
+  @include lib.set-size(6px);
+
+  border-radius: math.div($size, 2);
+}
+
+.hasGreenColor {
+  background-color: constants.$color-green;
+}
+
+.hasOrangeColor {
+  background-color: constants.$color-orange;
+}
+
+.hasBlueColor {
+  background-color: constants.$color-blue;
+}

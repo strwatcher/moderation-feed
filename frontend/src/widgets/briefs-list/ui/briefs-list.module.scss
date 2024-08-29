@@ -1,0 +1,13 @@
+@use "/src/shared/styles/lib" as lib;
+
+.root {
+  @include lib.stack(20px);
+}
+
+.caption {
+  @include lib.set-size(100%);
+
+  font-size: lib.to-rem(24px);
+  display: grid;
+  place-items: center;
+}

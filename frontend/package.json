@@ -1,0 +1,47 @@
+{
+	"name": "moderation-feed-frontend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"lint": "eslint .",
+		"preview": "vite preview",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"@radix-ui/react-dialog": "^1.1.1",
+		"@withease/contracts": "^1.1.0",
+		"clsx": "^2.1.1",
+		"notistack": "^3.0.1",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@chromatic-com/storybook": "^1.7.0",
+		"@eslint/js": "^9.9.0",
+		"@storybook/addon-essentials": "^8.1.11",
+		"@storybook/addon-interactions": "^8.1.11",
+		"@storybook/addon-links": "^8.1.11",
+		"@storybook/blocks": "^8.1.11",
+		"@storybook/react": "^8.1.11",
+		"@storybook/react-vite": "^8.1.11",
+		"@storybook/test": "^8.1.11",
+		"@types/node": "^22.5.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"globals": "^15.9.0",
+		"sass": "^1.77.8",
+		"storybook": "^8.1.11",
+		"stylelint": "^16.8.2",
+		"stylelint-config-standard": "^36.0.1",
+		"stylelint-scss": "^6.5.0",
+		"typescript": "^5.5.3",
+		"vite": "^5.4.1",
+		"vite-plugin-svgr": "^4.2.0",
+		"vitest": "^2.0.5"
+	}
+}

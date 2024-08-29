@@ -1,0 +1,16 @@
+@use "/src/shared/styles/lib" as lib;
+@use "/src/shared/styles/constants" as constants;
+
+.root {
+  @include lib.group(6px);
+}
+
+.title {
+  color: constants.$color-black-1;
+  width: 90px;
+  overflow-wrap: anywhere;
+}
+
+.legend {
+  color: constants.$color-grey-4;
+}

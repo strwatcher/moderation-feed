@@ -1,0 +1,15 @@
+@use "/src/shared/styles/constants" as constants;
+
+.root {
+  cursor: pointer;
+  color: constants.$color-blue;
+
+  &:hover {
+    color: darken($color: constants.$color-blue, $amount: 20%);
+  }
+
+  &:focus-visible {
+    color: darken($color: constants.$color-blue, $amount: 20%);
+    text-decoration: underline;
+  }
+}

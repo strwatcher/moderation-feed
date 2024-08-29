@@ -1,0 +1,13 @@
+@use "/src/shared/styles/lib" as lib;
+@use "/src/shared/styles/constants" as constants;
+
+.label {
+  @include lib.stack(8px);
+}
+
+.textarea {
+  border-radius: 4px;
+  border: 1px solid constants.$color-grey-2;
+  padding: 8px;
+  resize: none;
+}

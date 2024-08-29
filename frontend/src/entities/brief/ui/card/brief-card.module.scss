@@ -1,0 +1,79 @@
+@use "/src/shared/styles/lib" as lib;
+@use "/src/shared/styles/constants" as constants;
+
+.root {
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    box-shadow: 0 0 8px 2px constants.$color-blue-grey;
+    transform: scale(1.005);
+  }
+}
+
+.header {
+  @include lib.group;
+
+  justify-content: space-between;
+}
+
+.info {
+  @include lib.group(6px);
+
+  align-items: flex-start;
+}
+
+.content {
+  @include lib.stack(16px);
+
+  position: relative;
+  align-items: flex-start;
+}
+
+.subject {
+  font-size: lib.to-rem(24px);
+  font-weight: constants.$font-weight-regular;
+}
+
+.sections {
+  @include lib.group(16px);
+
+  align-items: flex-start;
+  height: 400px;
+  overflow-y: hidden;
+}
+
+%section {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.textSection {
+  padding-right: 16px;
+  border-right: 1px solid constants.$color-grey-2;
+
+  @extend %section;
+}
+
+.text {
+  white-space: pre-wrap;
+}
+
+.imagesSection {
+  @include lib.stack(16px);
+
+  flex-shrink: 0;
+  width: 320px;
+
+  @extend %section;
+}
+
+.image {
+  width: 200px;
+}
+
+.indicator {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}

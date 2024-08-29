@@ -1,0 +1,35 @@
+/* === Colors === */
+$color-white: white;
+
+$color-black-1: black;
+$color-black-2: #4a4a4a;
+
+$color-grey-1: #f7f7f7;
+$color-grey-2: #e4e4e4;
+$color-grey-3: #ddd;
+$color-grey-4: #777;
+
+$color-blue: #1764cc;
+$color-blue-grey: #7189a9;
+
+$color-green: #88bd35;
+$color-orange: #f7882e;
+
+/* === Fonts === */
+$root-font-size: 16px;
+
+$font-family-base: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$font-weight-regular: 400;
+
+/* === Transition === */
+$transition-default-duration: 0.3s !default;
+$transition-default-timing-function: ease !default;
+$transition-default: $transition-default-duration $transition-default-timing-function !default;
+
+/* === Shadows === */
+
+$base-shadow: 0 1px 8px 0 #00000040;
+
+/* === Layers === */
+$z-index-modal: 10;

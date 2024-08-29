@@ -1,0 +1,24 @@
+@use "/src/shared/styles/lib" as lib;
+@use "/src/shared/styles/constants" as constants;
+
+.root {
+  @include lib.group(20px);
+
+  padding: 20px;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.main {
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: grid;
+  place-items: center;
+}
+
+.aside {
+  position: sticky;
+  top: 20px;
+  flex-shrink: 0;
+  pointer-events: none;
+}

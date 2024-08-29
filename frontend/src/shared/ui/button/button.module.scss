@@ -1,0 +1,25 @@
+@use "/src/shared/styles/constants" as constants;
+
+.root {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: constants.$color-orange;
+  color: constants.$color-white;
+  display: grid;
+  place-items: center;
+
+  &:not(:disabled) {
+    &:focus-visible,
+    &:hover {
+      background-color: darken($color: constants.$color-orange, $amount: 15%);
+    }
+
+    &:active {
+      background-color: darken($color: constants.$color-orange, $amount: 10%);
+    }
+  }
+
+  &:disabled {
+    background-color: darken($color: constants.$color-grey-3, $amount: 10%);
+  }
+}
